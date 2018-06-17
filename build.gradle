@@ -45,8 +45,13 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	//compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+	compile('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
+	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
-	testCompile('org.springframework.boot:spring-boot-starter-test')
 	compile('org.jetbrains.kotlinx:kotlinx-coroutines-core:0.23.3')
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+
 }
